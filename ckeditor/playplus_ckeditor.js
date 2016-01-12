@@ -8,7 +8,10 @@
 //禁止文字，ckeditor 4 以上版本已預設禁止script，參考http://docs.ckeditor.com/#!/guide/dev_disallowed_content
 //CKEDITOR.config.disallowedContent = 'script; *[on*]';
 
-//table表格寬預設100%
+//准許文字，可以在原始碼模式寫class與id等屬性以及inline style
+CKEDITOR.config.extraAllowedContent = '*(*);*{*}';
+
+//table表格寬預設100%，圖片上傳寬100%
 CKEDITOR.on('dialogDefinition', function(ev) {
 
 	var diagName = ev.data.name;
@@ -19,6 +22,13 @@ CKEDITOR.on('dialogDefinition', function(ev) {
 
 		var width = infoTab.get('txtWidth');
 		width['default'] = "100%";
+
+	}
+	if (diagName === 'image2') {
+		var infoTab = diagDefn.getContents('info');
+
+		// var width = infoTab.get('txtWidth');
+		// width['default'] = "100%";
 
 	}
 });
@@ -35,11 +45,25 @@ CKEDITOR.config.font_names="微軟正黑體/微軟正黑體;標楷體/標楷體;
 //行高
 CKEDITOR.config.line_height="0.3;0.4;0.5;0.6;0.7;0.8;0.9;1;1.1;1.2;1.3;1.4;1.5;2;3;4;5";
 
+//載入其他外掛
+CKEDITOR.config.extraPlugins = 'image2,liststyle,filetools,notificationaggregator,notification,uploadwidget,uploadimage';
+
+//移除外掛
+CKEDITOR.config.removePlugins = 'save,language, iframe, forms';
+
+//回復次數上限，預設20
+//CKEDITOR.config.undoStackSize = 20;
+
+//每次縮排大小，預設40
+//CKEDITOR.config.indentOffset = 40;
+//縮排單位，預設px
+//CKEDITORconfig.indentUnit = 'px';
+
+//輔助線顏色，預設#FF0000
+//CKEDITOR.config.magicline_color = '#FF0000';
+
 //載入輸出目標頁面的css到編輯器內，減少前後台誤差
 //CKEDITOR.config.contentsCss = '/css/mysitestyles.css';
 
 //載入特定js檔至特定的textarea id，用id名稱置換myfield
 //CKEDITOR.replace( 'myfield', { customConfig: '/myconfig.js' } );
-
-//載入外掛
-//CKEDITOR.config.extraPlugins = 'myplugin,anotherplugin';
