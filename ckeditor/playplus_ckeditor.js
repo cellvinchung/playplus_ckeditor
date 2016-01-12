@@ -49,7 +49,7 @@ CKEDITOR.config.line_height="0.3;0.4;0.5;0.6;0.7;0.8;0.9;1;1.1;1.2;1.3;1.4;1.5;2
 CKEDITOR.config.extraPlugins = 'image2,liststyle,filetools,notificationaggregator,notification,uploadwidget,uploadimage';
 
 //移除外掛
-CKEDITOR.config.removePlugins = 'save,language, iframe, forms';
+CKEDITOR.config.removePlugins = 'language, iframe, forms';
 
 //回復次數上限，預設20
 //CKEDITOR.config.undoStackSize = 20;
@@ -67,3 +67,4 @@ CKEDITOR.config.removePlugins = 'save,language, iframe, forms';
 
 //載入特定js檔至特定的textarea id，用id名稱置換myfield
 //CKEDITOR.replace( 'myfield', { customConfig: '/myconfig.js' } );
+
