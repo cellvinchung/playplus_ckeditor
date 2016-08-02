@@ -5,5 +5,5 @@ CKEDITOR.config.toolbar = [
     { name: 'insert', items: ['Image', 'tliyoutube2', 'SpecialChar']},
     '/',
     { name: 'basicstyles', items: [ 'Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', 'RemoveFormat' ] },
-    { name: 'styles', items: [ 'Format', 'Font', 'FontSize', 'letterspacing', 'TextColor', 'BGColor' ] },
+    { name: 'styles', items: [ 'Format', 'Font', 'FontSize', 'letterspacing', 'lineheight', 'TextColor', 'BGColor' ] },
 ];

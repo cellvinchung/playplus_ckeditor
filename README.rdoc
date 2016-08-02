@@ -1,32 +1,50 @@
 # playplus_ckeditor
-ckeditor for playplus, based on ckeditor 4.5.6<br>
+ckeditor for playplus, based on ckeditor 4.5.6
 
 v 1.1
------------------------------
+
 新增簡易版本、youtube外掛
+-----------------------------
 
-使用時需要引入的js(依順序):<br>
-ckeditor.js<br>
-playplus_ckeditor.js<br>
 
-<h4>若要使用簡易版本則再引入</h4>：<br>
-layplus_ckeditor_simple.js<br>
+* 使用時需要引入的js(依順序):
+ckeditor.js
 
-<br>
-playplus_ckeditor預設設定：<br>
-・樣式：office word 2013<br>
-・表格載入預設寬：100%<br>
-・簡化圖片上傳對話框，並增加圖片標題區塊<br>
-・圖片可拖曳調整大小<br>
-・圖片可上下拖曳調整位置，可置左置中置右對齊<br>
-・可拖曳表格中儲存格欄寬<br>
-・語系：中文，文字內容可至/lang/zh.js修改<br>
-・字級：最小12px<br>
-・字型：新增微軟正黑體、標楷體、新細明體<br>
-・order list：新增小寫中文數字(一、二、三)<br>
-・新增行高：0.3~5<br>
-・新增字元間距：-10px~10px<br>
-・准許原始碼模式中寫class、id等html屬性及inline style<br>
-・刪除預載的flash、預覽、iframe、表單外掛<br>
-其他客製化設定請至playplus_ckeditor.js/playplus_ckeditor_simple.js編輯<br>
+playplus_ckeditor.js
+
+* 若要使用簡易版本則再引入：
+playplus_ckeditor_simple.js
+* 簡易版本內容：
+剪下、複製、貼上、ol/li列表、縮排、置左置中置右、超連結、圖片上傳、youtube、文字相關樣式等
+-----------------------------
+* playplus_ckeditor預設設定：
+・樣式：office word 2013
+
+・表格載入預設寬：100%
+
+・簡化圖片上傳對話框，並增加圖片標題區塊
+
+・圖片可拖曳調整大小
+
+・圖片可上下拖曳調整位置，可置左置中置右對齊
+
+・可拖曳表格中儲存格欄寬
+
+・語系：中文，文字內容可至/lang/zh.js修改
+
+・字級：最小12px
+
+・字型：新增微軟正黑體、標楷體、新細明體
+
+・order list：新增小寫中文數字(一、二、三)
+
+・新增行高：0.3~5
+
+・新增字元間距：-10px~10px
+
+・准許原始碼模式中寫class、id等html屬性及inline style
+
+・刪除預載的flash、預覽、iframe、表單外掛
+
+其他客製化設定請至playplus_ckeditor.js/playplus_ckeditor_simple.js編輯
 參考內容：http://docs.ckeditor.com/#!/api/CKEDITOR.config-cfg-fileTools_defaultFileName
