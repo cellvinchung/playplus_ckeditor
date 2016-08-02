@@ -1,8 +1,17 @@
 # playplus_ckeditor
 ckeditor for playplus, based on ckeditor 4.5.6<br>
-使用時需要引入的js:<br>
+
+v 1.1
+-----------------------------
+新增簡易版本、youtube外掛
+
+使用時需要引入的js(依順序):<br>
 ckeditor.js<br>
 playplus_ckeditor.js<br>
+
+<h4>若要使用簡易版本則再引入</h4>：<br>
+layplus_ckeditor_simple.js<br>
+
 <br>
 playplus_ckeditor預設設定：<br>
 ・樣式：office word 2013<br>
@@ -19,5 +28,5 @@ playplus_ckeditor預設設定：<br>
 ・新增字元間距：-10px~10px<br>
 ・准許原始碼模式中寫class、id等html屬性及inline style<br>
 ・刪除預載的flash、預覽、iframe、表單外掛<br>
-其他客製化設定請至playplus_ckeditor.js編輯<br>
+其他客製化設定請至playplus_ckeditor.js/playplus_ckeditor_simple.js編輯<br>
 參考內容：http://docs.ckeditor.com/#!/api/CKEDITOR.config-cfg-fileTools_defaultFileName

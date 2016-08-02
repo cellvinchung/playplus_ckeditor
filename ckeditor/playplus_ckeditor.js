@@ -36,20 +36,21 @@ CKEDITOR.on('dialogDefinition', function(ev) {
 //語言，語言內容至zh.js更改
 CKEDITOR.config.defaultLanguage = 'zh';
 
-//字級，chrome設定最小限制12px
+//字級，chrome設定最小限制12px，顯示文字/font-size
 CKEDITOR.config.fontSize_sizes = "12/12px;14/14px;16/16px;18/18px;20/20px;22/22px;24/24px;26/26px;28/28px;36/36px;48/48px;72/72px";
 
 //字型
 CKEDITOR.config.font_names="微軟正黑體/微軟正黑體;標楷體/標楷體;新細明體/新細明體;Arial/Arial, Helvetica, sans-serif;Comic Sans MS/Comic Sans MS, cursive;Courier New/Courier New, Courier, monospace;Georgia/Georgia, serif;Lucida Sans Unicode/Lucida Sans Unicode, Lucida Grande, sans-serif;Tahoma/Tahoma, Geneva, sans-serif;Times New Roman/Times New Roman, Times, serif;Trebuchet MS/Trebuchet MS, Helvetica, sans-serif;Verdana/Verdana, Geneva, sans-serif";
-
+//格式，只使用p與h1~h6
+CKEDITOR.config.format_tags = 'p;h1;h2;h3;h4;h5;h6';
 //行高
 CKEDITOR.config.line_height="0.3;0.4;0.5;0.6;0.7;0.8;0.9;1;1.1;1.2;1.3;1.4;1.5;2;3;4;5";
 
 //載入其他外掛
-CKEDITOR.config.extraPlugins = 'image2,liststyle,filetools,notificationaggregator,notification,uploadwidget,uploadimage';
+CKEDITOR.config.extraPlugins = 'image2,tliyoutube2,liststyle,filetools,notificationaggregator,notification,uploadwidget,uploadimage';
 
 //移除外掛
-CKEDITOR.config.removePlugins = 'language, iframe, forms';
+CKEDITOR.config.removePlugins = 'language, forms, iframe';
 
 //回復次數上限，預設20
 //CKEDITOR.config.undoStackSize = 20;
