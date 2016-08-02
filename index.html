@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>playplus_ckeditor_simple</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="ckeditor/ckeditor.js"></script>
+	<script src="ckeditor/playplus_ckeditor.js"></script>
+	<script src="ckeditor/playplus_ckeditor_simple.js"></script>
+</head>
+<body>
+	<div id="ckeditor">
+		
+	</div>
+	<script>
+		$(document).ready(function() {
+			CKEDITOR.replace('ckeditor', {
+					filebrowserUploadUrl : '/path/to/action',
+			});
+		});
+	</script>
+</body>
+</html>
